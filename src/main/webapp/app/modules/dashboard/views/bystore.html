@@ -1,0 +1,156 @@
+<!--
+Author: Ranjithprabhu K
+Page Description: Dashboard page
+Date: 05 Jan 2016
+-->
+
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+       <div class="row">
+        <div class="col-lg-6">
+
+            <form role="form">
+                
+				<fieldset class="form-group">
+                    <label>Dept-Plan Level:</label>
+					<br>
+					<input id="partitioned" type="text" ng-model="DEPT_NUM" maxlength="3">
+					<input id="partitioned1" type="text" ng-model="GROUPS" maxlength="3">
+					<input id="partitioned1" type="text" ng-model="PAGE" maxlength="3">
+                </fieldset>
+				
+				<fieldset class="form-group">
+                    <label>AVG S/S:</label>
+                    <input class="form-control">
+                </fieldset>
+				
+				<fieldset class="form-group">
+                    <label>Blend OTS?:</label>
+					<br>
+					<input id="partitioned" type="text" maxlength="3">
+					<input id="partitioned1" type="text" maxlength="3">
+					<input id="partitioned" type="text" maxlength="2">
+                </fieldset>
+
+				<fieldset class="form-group">
+                    <label>ALL:</label>&nbsp;
+					 <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">Yes
+                    </label>&nbsp;
+                    <label class="radio-inline">
+                        <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">No
+                    </label>
+					</div>
+                </fieldset>
+				
+				<fieldset class="form-group">
+                    <label>Zone:</label>
+					<br>
+					<input id="partitioned" type="text" maxlength="2">
+					<input id="partitioned" type="text" maxlength="2">
+					<input id="partitioned" type="text" maxlength="2">
+                </fieldset>
+				
+				<div class="form-group">
+                    <label>CH LST:</label>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+				
+                <fieldset class="form-group">
+                    <label>Sort:</label>
+                    <input class="form-control" placeholder="Enter text">
+                </fieldset>
+				
+				 <fieldset class="form-group">
+                    <label>STR:</label>
+                    <input class="form-control" placeholder="Enter text">
+                </fieldset>
+
+            </form>
+
+        </div>
+        <div class="col-lg-6">
+            
+
+            <form role="form">
+
+			<fieldset class="form-group">
+                    <label>Trans Y/N?:</label>&nbsp;
+					 <div class="radio">
+                    <label class="radio-inline">
+                        <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="">Yes
+                    </label>&nbsp;
+                    <label class="radio-inline">
+                        <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">No
+                    </label>
+					</div>
+                </fieldset>
+				
+				<div class="form-group">
+                    <label>Catg/Class:</label>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+				
+				 <fieldset class="form-group">
+                    <label>Plan Desc:</label>
+                    <input class="form-control" placeholder="Enter text">
+                </fieldset>
+				
+				<fieldset class="form-group">
+                    <label>WHSE:</label>
+					<br>
+					<input id="partitioned" type="text" maxlength="1">
+					<input id="partitioned" type="text" maxlength="1">
+					<input id="partitioned" type="text" maxlength="1">
+                </fieldset>
+				
+				<div class="form-group">
+                    <label>Attr List:</label>
+                    <select class="form-control">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+				
+				<fieldset class="form-group">
+                    <label>ALRDY ADJ:</label>
+                    <input class="form-control" placeholder="Enter text">
+                </fieldset>
+				
+				<fieldset class="form-group">
+                    <label for="dateofbirth">OTS Range:</label><br>
+					<label for="dateofbirth">From &nbsp;</label>&nbsp;<input type="date" name="dateofbirth" id="dateofbirth">&nbsp;<label for="dateofbirth">To &nbsp;</label>&nbsp;<input type="date" name="dateofbirth" id="dateofbirth">
+                </fieldset>
+			
+				<fieldset class="form-group">
+                    <label>S/S:</label>
+                    <input class="form-control" placeholder="Enter text">
+                </fieldset>
+				
+            </form>
+			</div>
+    </div>
+	  <div class="row">
+                            <div class="pull-right">
+                                <md-button class="md-raised md-primary" type="submit" data-ng-click="vm.submitForm();">Search <i class="fa fa-search"></i></md-button>
+                                <md-button class="md-raised md-warn" type="reset">Clear <i class="fa fa-trash-o"></i></md-button>
+                            </div>
+							</div>
+    </section><!-- /.content -->
+

@@ -1,0 +1,79 @@
+
+<div>
+    <h2><span>Storeparent</span> {{vm.storeparent.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row jh-entity-details">
+        <dt><span>Deptnum</span></dt>
+        <dd>
+            <span>{{vm.storeparent.deptnum}}</span>
+        </dd>
+        <dt><span>Divnum</span></dt>
+        <dd>
+            <span>{{vm.storeparent.divnum}}</span>
+        </dd>
+        <dt><span>Groups</span></dt>
+        <dd>
+            <span>{{vm.storeparent.groups}}</span>
+        </dd>
+        <dt><span>Pages</span></dt>
+        <dd>
+            <span>{{vm.storeparent.pages}}</span>
+        </dd>
+        <dt><span>Transitional</span></dt>
+        <dd>
+            <span>{{vm.storeparent.transitional}}</span>
+        </dd>
+        <dt><span>Postonlyind</span></dt>
+        <dd>
+            <span>{{vm.storeparent.postonlyind}}</span>
+        </dd>
+        <dt><span>Catgnumone</span></dt>
+        <dd>
+            <span>{{vm.storeparent.catgnumone}}</span>
+        </dd>
+        <dt><span>Catgnumtwo</span></dt>
+        <dd>
+            <span>{{vm.storeparent.catgnumtwo}}</span>
+        </dd>
+        <dt><span>Catgnumthree</span></dt>
+        <dd>
+            <span>{{vm.storeparent.catgnumthree}}</span>
+        </dd>
+        <dt><span>Catgnumfour</span></dt>
+        <dd>
+            <span>{{vm.storeparent.catgnumfour}}</span>
+        </dd>
+        <dt><span>Blndotsdep</span></dt>
+        <dd>
+            <span>{{vm.storeparent.blndotsdep}}</span>
+        </dd>
+        <dt><span>Blndotsgrp</span></dt>
+        <dd>
+            <span>{{vm.storeparent.blndotsgrp}}</span>
+        </dd>
+        <dt><span>Blndotspage</span></dt>
+        <dd>
+            <span>{{vm.storeparent.blndotspage}}</span>
+        </dd>
+        <dt><span>Catgnumfive</span></dt>
+        <dd>
+            <span>{{vm.storeparent.catgnumfive}}</span>
+        </dd>
+        <dt><span>Plandesc</span></dt>
+        <dd>
+            <span>{{vm.storeparent.plandesc}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="storeparent_wipro-detail.edit({id:vm.storeparent.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>

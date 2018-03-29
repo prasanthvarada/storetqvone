@@ -1,0 +1,206 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()">
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myStorepwtLabel">Create or edit a Storepwt</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.storepwt.id">
+            <label for="id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.storepwt.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_deptnum">Deptnum</label>
+            <input type="number" class="form-control" name="deptnum" id="field_deptnum"
+                    ng-model="vm.storepwt.deptnum"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_divnum">Divnum</label>
+            <input type="number" class="form-control" name="divnum" id="field_divnum"
+                    ng-model="vm.storepwt.divnum"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_groups">Groups</label>
+            <input type="number" class="form-control" name="groups" id="field_groups"
+                    ng-model="vm.storepwt.groups"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_pages">Pages</label>
+            <input type="number" class="form-control" name="pages" id="field_pages"
+                    ng-model="vm.storepwt.pages"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_transitional">Transitional</label>
+            <input type="text" class="form-control" name="transitional" id="field_transitional"
+                    ng-model="vm.storepwt.transitional"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_workuid">Workuid</label>
+            <input type="text" class="form-control" name="workuid" id="field_workuid"
+                    ng-model="vm.storepwt.workuid"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_ordinalkey">Ordinalkey</label>
+            <input type="number" class="form-control" name="ordinalkey" id="field_ordinalkey"
+                    ng-model="vm.storepwt.ordinalkey"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_strnum">Strnum</label>
+            <input type="number" class="form-control" name="strnum" id="field_strnum"
+                    ng-model="vm.storepwt.strnum"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_dcnum">Dcnum</label>
+            <input type="number" class="form-control" name="dcnum" id="field_dcnum"
+                    ng-model="vm.storepwt.dcnum"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_zonenum">Zonenum</label>
+            <input type="number" class="form-control" name="zonenum" id="field_zonenum"
+                    ng-model="vm.storepwt.zonenum"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_ssratturn">Ssratturn</label>
+            <input type="number" class="form-control" name="ssratturn" id="field_ssratturn"
+                    ng-model="vm.storepwt.ssratturn"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_currentots">Currentots</label>
+            <input type="number" class="form-control" name="currentots" id="field_currentots"
+                    ng-model="vm.storepwt.currentots"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_totactualsales">Totactualsales</label>
+            <input type="number" class="form-control" name="totactualsales" id="field_totactualsales"
+                    ng-model="vm.storepwt.totactualsales"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_totplndsales">Totplndsales</label>
+            <input type="number" class="form-control" name="totplndsales" id="field_totplndsales"
+                    ng-model="vm.storepwt.totplndsales"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_twinvt">Twinvt</label>
+            <input type="number" class="form-control" name="twinvt" id="field_twinvt"
+                    ng-model="vm.storepwt.twinvt"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_invtplndend">Invtplndend</label>
+            <input type="number" class="form-control" name="invtplndend" id="field_invtplndend"
+                    ng-model="vm.storepwt.invtplndend"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_twsales">Twsales</label>
+            <input type="number" class="form-control" name="twsales" id="field_twsales"
+                    ng-model="vm.storepwt.twsales"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_wtddist">Wtddist</label>
+            <input type="number" class="form-control" name="wtddist" id="field_wtddist"
+                    ng-model="vm.storepwt.wtddist"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_origots">Origots</label>
+            <input type="number" class="form-control" name="origots" id="field_origots"
+                    ng-model="vm.storepwt.origots"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_otsadj">Otsadj</label>
+            <input type="number" class="form-control" name="otsadj" id="field_otsadj"
+                    ng-model="vm.storepwt.otsadj"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_salesago">Salesago</label>
+            <input type="number" class="form-control" name="salesago" id="field_salesago"
+                    ng-model="vm.storepwt.salesago"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_lwsales">Lwsales</label>
+            <input type="number" class="form-control" name="lwsales" id="field_lwsales"
+                    ng-model="vm.storepwt.lwsales"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_salesplnd">Salesplnd</label>
+            <input type="number" class="form-control" name="salesplnd" id="field_salesplnd"
+                    ng-model="vm.storepwt.salesplnd"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_salesplndwktwo">Salesplndwktwo</label>
+            <input type="number" class="form-control" name="salesplndwktwo" id="field_salesplndwktwo"
+                    ng-model="vm.storepwt.salesplndwktwo"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_salesplndbal">Salesplndbal</label>
+            <input type="number" class="form-control" name="salesplndbal" id="field_salesplndbal"
+                    ng-model="vm.storepwt.salesplndbal"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_otsweeks">Otsweeks</label>
+            <input type="number" class="form-control" name="otsweeks" id="field_otsweeks"
+                    ng-model="vm.storepwt.otsweeks"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_lwdistreg">Lwdistreg</label>
+            <input type="number" class="form-control" name="lwdistreg" id="field_lwdistreg"
+                    ng-model="vm.storepwt.lwdistreg"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_invtplnd">Invtplnd</label>
+            <input type="number" class="form-control" name="invtplnd" id="field_invtplnd"
+                    ng-model="vm.storepwt.invtplnd"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_lwinvt">Lwinvt</label>
+            <input type="number" class="form-control" name="lwinvt" id="field_lwinvt"
+                    ng-model="vm.storepwt.lwinvt"
+                    />
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="field_origpct">Origpct</label>
+            <input type="number" class="form-control" name="origpct" id="field_origpct"
+                    ng-model="vm.storepwt.origpct"
+                    />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span>Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || vm.isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span>Save</span>
+        </button>
+    </div>
+</form>

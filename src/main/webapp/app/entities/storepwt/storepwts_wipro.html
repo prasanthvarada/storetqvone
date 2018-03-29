@@ -1,0 +1,114 @@
+<div>
+    <h2>Storepwts</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="storepwt_wipro.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Storepwt
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
+                    <th jh-sort-by="id"><span>ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="deptnum"><span>Deptnum</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="divnum"><span>Divnum</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="groups"><span>Groups</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="pages"><span>Pages</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="transitional"><span>Transitional</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="workuid"><span>Workuid</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="ordinalkey"><span>Ordinalkey</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="strnum"><span>Strnum</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="dcnum"><span>Dcnum</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="zonenum"><span>Zonenum</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="ssratturn"><span>Ssratturn</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="currentots"><span>Currentots</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="totactualsales"><span>Totactualsales</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="totplndsales"><span>Totplndsales</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="twinvt"><span>Twinvt</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="invtplndend"><span>Invtplndend</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="twsales"><span>Twsales</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="wtddist"><span>Wtddist</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="origots"><span>Origots</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="otsadj"><span>Otsadj</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="salesago"><span>Salesago</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="lwsales"><span>Lwsales</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="salesplnd"><span>Salesplnd</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="salesplndwktwo"><span>Salesplndwktwo</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="salesplndbal"><span>Salesplndbal</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="otsweeks"><span>Otsweeks</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="lwdistreg"><span>Lwdistreg</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="invtplnd"><span>Invtplnd</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="lwinvt"><span>Lwinvt</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="origpct"><span>Origpct</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="storepwt in vm.storepwts track by storepwt.id">
+                    <td><a ui-sref="storepwt_wipro-detail({id:storepwt.id})">{{storepwt.id}}</a></td>
+                    <td>{{storepwt.deptnum}}</td>
+                    <td>{{storepwt.divnum}}</td>
+                    <td>{{storepwt.groups}}</td>
+                    <td>{{storepwt.pages}}</td>
+                    <td>{{storepwt.transitional}}</td>
+                    <td>{{storepwt.workuid}}</td>
+                    <td>{{storepwt.ordinalkey}}</td>
+                    <td>{{storepwt.strnum}}</td>
+                    <td>{{storepwt.dcnum}}</td>
+                    <td>{{storepwt.zonenum}}</td>
+                    <td>{{storepwt.ssratturn}}</td>
+                    <td>{{storepwt.currentots}}</td>
+                    <td>{{storepwt.totactualsales}}</td>
+                    <td>{{storepwt.totplndsales}}</td>
+                    <td>{{storepwt.twinvt}}</td>
+                    <td>{{storepwt.invtplndend}}</td>
+                    <td>{{storepwt.twsales}}</td>
+                    <td>{{storepwt.wtddist}}</td>
+                    <td>{{storepwt.origots}}</td>
+                    <td>{{storepwt.otsadj}}</td>
+                    <td>{{storepwt.salesago}}</td>
+                    <td>{{storepwt.lwsales}}</td>
+                    <td>{{storepwt.salesplnd}}</td>
+                    <td>{{storepwt.salesplndwktwo}}</td>
+                    <td>{{storepwt.salesplndbal}}</td>
+                    <td>{{storepwt.otsweeks}}</td>
+                    <td>{{storepwt.lwdistreg}}</td>
+                    <td>{{storepwt.invtplnd}}</td>
+                    <td>{{storepwt.lwinvt}}</td>
+                    <td>{{storepwt.origpct}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="storepwt_wipro-detail({id:storepwt.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="storepwt_wipro.edit({id:storepwt.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="storepwt_wipro.delete({id:storepwt.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

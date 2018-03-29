@@ -1,0 +1,84 @@
+<div>
+    <h2>Storeparents</h2>
+    <jhi-alert></jhi-alert>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 no-padding-left">
+                <button class="btn btn-primary" ui-sref="storeparent_wipro.new" >
+                    <span class="glyphicon glyphicon-plus"></span>
+                    <span >
+                        Create new Storeparent
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="table-responsive">
+        <table class="jh-table table table-striped">
+            <thead>
+                <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
+                    <th jh-sort-by="id"><span>ID</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="deptnum"><span>Deptnum</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="divnum"><span>Divnum</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="groups"><span>Groups</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="pages"><span>Pages</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="transitional"><span>Transitional</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="postonlyind"><span>Postonlyind</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="catgnumone"><span>Catgnumone</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="catgnumtwo"><span>Catgnumtwo</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="catgnumthree"><span>Catgnumthree</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="catgnumfour"><span>Catgnumfour</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="blndotsdep"><span>Blndotsdep</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="blndotsgrp"><span>Blndotsgrp</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="blndotspage"><span>Blndotspage</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="catgnumfive"><span>Catgnumfive</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th jh-sort-by="plandesc"><span>Plandesc</span> <span class="glyphicon glyphicon-sort"></span></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="storeparent in vm.storeparents track by storeparent.id">
+                    <td><a ui-sref="storeparent_wipro-detail({id:storeparent.id})">{{storeparent.id}}</a></td>
+                    <td>{{storeparent.deptnum}}</td>
+                    <td>{{storeparent.divnum}}</td>
+                    <td>{{storeparent.groups}}</td>
+                    <td>{{storeparent.pages}}</td>
+                    <td>{{storeparent.transitional}}</td>
+                    <td>{{storeparent.postonlyind}}</td>
+                    <td>{{storeparent.catgnumone}}</td>
+                    <td>{{storeparent.catgnumtwo}}</td>
+                    <td>{{storeparent.catgnumthree}}</td>
+                    <td>{{storeparent.catgnumfour}}</td>
+                    <td>{{storeparent.blndotsdep}}</td>
+                    <td>{{storeparent.blndotsgrp}}</td>
+                    <td>{{storeparent.blndotspage}}</td>
+                    <td>{{storeparent.catgnumfive}}</td>
+                    <td>{{storeparent.plandesc}}</td>
+                    <td class="text-right">
+                        <div class="btn-group flex-btn-group-container">
+                            <button type="submit"
+                                    ui-sref="storeparent_wipro-detail({id:storeparent.id})"
+                                    class="btn btn-info btn-sm">
+                                <span class="glyphicon glyphicon-eye-open"></span>
+                                <span class="hidden-sm-down"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="storeparent_wipro.edit({id:storeparent.id})"
+                                    class="btn btn-primary btn-sm">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                                <span class="hidden-sm-down"></span>
+                            </button>
+                            <button type="submit"
+                                    ui-sref="storeparent_wipro.delete({id:storeparent.id})"
+                                    class="btn btn-danger btn-sm">
+                                <span class="glyphicon glyphicon-remove-circle"></span>
+                                <span class="hidden-sm-down"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

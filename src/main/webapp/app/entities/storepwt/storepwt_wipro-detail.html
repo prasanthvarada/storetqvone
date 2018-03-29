@@ -1,0 +1,139 @@
+
+<div>
+    <h2><span>Storepwt</span> {{vm.storepwt.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="row jh-entity-details">
+        <dt><span>Deptnum</span></dt>
+        <dd>
+            <span>{{vm.storepwt.deptnum}}</span>
+        </dd>
+        <dt><span>Divnum</span></dt>
+        <dd>
+            <span>{{vm.storepwt.divnum}}</span>
+        </dd>
+        <dt><span>Groups</span></dt>
+        <dd>
+            <span>{{vm.storepwt.groups}}</span>
+        </dd>
+        <dt><span>Pages</span></dt>
+        <dd>
+            <span>{{vm.storepwt.pages}}</span>
+        </dd>
+        <dt><span>Transitional</span></dt>
+        <dd>
+            <span>{{vm.storepwt.transitional}}</span>
+        </dd>
+        <dt><span>Workuid</span></dt>
+        <dd>
+            <span>{{vm.storepwt.workuid}}</span>
+        </dd>
+        <dt><span>Ordinalkey</span></dt>
+        <dd>
+            <span>{{vm.storepwt.ordinalkey}}</span>
+        </dd>
+        <dt><span>Strnum</span></dt>
+        <dd>
+            <span>{{vm.storepwt.strnum}}</span>
+        </dd>
+        <dt><span>Dcnum</span></dt>
+        <dd>
+            <span>{{vm.storepwt.dcnum}}</span>
+        </dd>
+        <dt><span>Zonenum</span></dt>
+        <dd>
+            <span>{{vm.storepwt.zonenum}}</span>
+        </dd>
+        <dt><span>Ssratturn</span></dt>
+        <dd>
+            <span>{{vm.storepwt.ssratturn}}</span>
+        </dd>
+        <dt><span>Currentots</span></dt>
+        <dd>
+            <span>{{vm.storepwt.currentots}}</span>
+        </dd>
+        <dt><span>Totactualsales</span></dt>
+        <dd>
+            <span>{{vm.storepwt.totactualsales}}</span>
+        </dd>
+        <dt><span>Totplndsales</span></dt>
+        <dd>
+            <span>{{vm.storepwt.totplndsales}}</span>
+        </dd>
+        <dt><span>Twinvt</span></dt>
+        <dd>
+            <span>{{vm.storepwt.twinvt}}</span>
+        </dd>
+        <dt><span>Invtplndend</span></dt>
+        <dd>
+            <span>{{vm.storepwt.invtplndend}}</span>
+        </dd>
+        <dt><span>Twsales</span></dt>
+        <dd>
+            <span>{{vm.storepwt.twsales}}</span>
+        </dd>
+        <dt><span>Wtddist</span></dt>
+        <dd>
+            <span>{{vm.storepwt.wtddist}}</span>
+        </dd>
+        <dt><span>Origots</span></dt>
+        <dd>
+            <span>{{vm.storepwt.origots}}</span>
+        </dd>
+        <dt><span>Otsadj</span></dt>
+        <dd>
+            <span>{{vm.storepwt.otsadj}}</span>
+        </dd>
+        <dt><span>Salesago</span></dt>
+        <dd>
+            <span>{{vm.storepwt.salesago}}</span>
+        </dd>
+        <dt><span>Lwsales</span></dt>
+        <dd>
+            <span>{{vm.storepwt.lwsales}}</span>
+        </dd>
+        <dt><span>Salesplnd</span></dt>
+        <dd>
+            <span>{{vm.storepwt.salesplnd}}</span>
+        </dd>
+        <dt><span>Salesplndwktwo</span></dt>
+        <dd>
+            <span>{{vm.storepwt.salesplndwktwo}}</span>
+        </dd>
+        <dt><span>Salesplndbal</span></dt>
+        <dd>
+            <span>{{vm.storepwt.salesplndbal}}</span>
+        </dd>
+        <dt><span>Otsweeks</span></dt>
+        <dd>
+            <span>{{vm.storepwt.otsweeks}}</span>
+        </dd>
+        <dt><span>Lwdistreg</span></dt>
+        <dd>
+            <span>{{vm.storepwt.lwdistreg}}</span>
+        </dd>
+        <dt><span>Invtplnd</span></dt>
+        <dd>
+            <span>{{vm.storepwt.invtplnd}}</span>
+        </dd>
+        <dt><span>Lwinvt</span></dt>
+        <dd>
+            <span>{{vm.storepwt.lwinvt}}</span>
+        </dd>
+        <dt><span>Origpct</span></dt>
+        <dd>
+            <span>{{vm.storepwt.origpct}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span> Back</span>
+    </button>
+
+    <button type="button" ui-sref="storepwt_wipro-detail.edit({id:vm.storepwt.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-sm-down"> Edit</span>
+    </button>
+</div>
