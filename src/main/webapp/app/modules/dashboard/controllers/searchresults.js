@@ -83,7 +83,7 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash, $http,
  
  $http({
         method : "GET",
-        url : 'http://192.168.99.1:8080/api/storeby/'+$scope.DEPT_NUM+'/'+$scope.GROUPS+'/'+$scope.PAGE+'/'+$scope.dcnum+'/'+$scope.strnum
+        url : 'http://springbootgit-jenkinspring.192.168.99.100.nip.io/api/storeby/'+$scope.DEPT_NUM+'/'+$scope.GROUPS+'/'+$scope.PAGE+'/'+$scope.dcnum+'/'+$scope.strnum
     }).then(function mySuccess(response) {
 		$scope.check = true;
         $scope.fetcheddata = response.data;
