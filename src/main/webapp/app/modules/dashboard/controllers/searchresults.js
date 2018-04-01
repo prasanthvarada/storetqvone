@@ -80,10 +80,10 @@ function ($rootScope, $scope, $state, $location, dashboardService, Flash, $http,
 				$scope.plandesc = "TEES"; // value.plandesc;
       console.log("inside form submit");
       //  var res = $http.post('http://127.0.0.1:3000/singledata', {"dept" :$scope.DEPT_NUM,"group" :$scope.GROUPS,"page" :$scope.PAGE,"dcnum":$scope.dcnum,"strnum":$scope.strnum});
- 
+      // http://springbootgit-jenkinspring.192.168.99.100.nip.io/api/storeby/
  $http({
         method : "GET",
-        url : 'http://springbootgit-jenkinspring.192.168.99.100.nip.io/api/storeby/'+$scope.DEPT_NUM+'/'+$scope.GROUPS+'/'+$scope.PAGE+'/'+$scope.dcnum+'/'+$scope.strnum
+        url : 'http://192.168.99.100:9091/api/storeby/'+$scope.DEPT_NUM+'/'+$scope.GROUPS+'/'+$scope.PAGE+'/'+$scope.dcnum+'/'+$scope.strnum
     }).then(function mySuccess(response) {
 		$scope.check = true;
         $scope.fetcheddata = response.data;
