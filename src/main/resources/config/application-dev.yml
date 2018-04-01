@@ -26,7 +26,7 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://172.17.0.5:3306/mysqlonedb?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8&useSSL=false
+        url: jdbc:mysql://172.17.0.6:3306/mysqlonedb?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8&useSSL=false
         username: devtwo
         password: devtwo
         hikari:
