@@ -1,0 +1,20 @@
+Points to run
+
+D:\Pr364954\E_Drive\projects\mysql\bin
+
+D:\Pr364954\E_Drive\TechStuff\Redhat\mini\mini_solutions\mysql tables_minishift_jhipster.txt
+
+root/admin
+use fullstack_withsec
+D:\Pr364954\E_Drive\JHipster\genbuilds\storetqvone\src\main\resources\config\application-dev.yml
+
+In application-dev.yml, below props:-
+url: jdbc:mysql://192.168.99.1:3306/fullstack_withsec?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8&useSSL=false
+        username: devtwo
+        password: devtwo 
+
+D:\Pr364954\E_Drive\JHipster\genbuilds\storetqvone\src\main\resources\config\application-dev.yml
+
+
+D:\Pr364954\E_Drive\JHipster\genbuilds\storetqvone>mvn spring-boot:run
+
