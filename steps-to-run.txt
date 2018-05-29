@@ -18,3 +18,10 @@ D:\Pr364954\E_Drive\JHipster\genbuilds\storetqvone\src\main\resources\config\app
 
 D:\Pr364954\E_Drive\JHipster\genbuilds\storetqvone>mvn spring-boot:run
 
+http://localhost:8080/
+
+when clicking on search button, make sure the URLS in /app/modules/Dashboard/Controllers/searcresults.js page to hit the right url.
+http://localhost:8080/api/storeby/11/300/100
+or
+http://springbootapp-jenkinspring.192.168.99.100.nip.io/api/storeby/'+$scope.DEPT_NUM+'/'+$scope.GROUPS+'/'+$scope.PAGE+'/'+$scope.dcnum+'/'+$scope.strnum
+
