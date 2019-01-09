@@ -26,7 +26,7 @@ spring:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://172.30.82.220:3306/fullstack_withsec?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8&useSSL=false
+        url: jdbc:mysql://172.30.186.197:3306/fullstack_withsec?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8&useSSL=false
         username: devtwo
         password: devtwo
         hikari:
